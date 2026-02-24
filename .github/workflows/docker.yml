@@ -39,6 +39,7 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
           cd ~/app
+          docker-compose down --remove-orphans || true
           docker-compose pull
           docker-compose down
           docker-compose up -d
