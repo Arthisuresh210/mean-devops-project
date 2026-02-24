@@ -81,7 +81,8 @@ write the docker-compose file and give :
 * Create nginx.config file
 *  vi nginx.conf
 
- <img width="1901" height="679" alt="image" src="https://github.com/user-attachments/assets/59d0ee36-1632-465a-b795-e6eaefeaf6a3" />
+ <img width="1916" height="829" alt="image" src="https://github.com/user-attachments/assets/27789b71-a5e7-43d2-8734-4ac83e61e1fc" />
+
 
 ## Application can be accessed from the EC2-public-ip
 <img width="1919" height="827" alt="op1" src="https://github.com/user-attachments/assets/aff1004b-b6ef-41ed-bfbc-3f38b5be9f6a" />
