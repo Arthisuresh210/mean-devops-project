@@ -39,8 +39,7 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
           cd ~/app
-          docker rm -f mean-mongo || true
-          docker-compose down --remove-orphans || true
+          docker stop $(sudo docker ps -aq) || true
+          docker rm -f $(sudo docker ps -aq) || true
           docker-compose pull
-          docker-compose down
           docker-compose up -d
