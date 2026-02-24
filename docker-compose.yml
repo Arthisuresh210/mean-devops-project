@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  backend:
+    image: arthisuresh0210157/backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URL=mongodb://mongo:27017/dd_db
+
+  frontend:
+    image: arthisuresh0210157/frontend
+    ports:
+      - "8081:80"
+    depends_on:
+      - backend
+
+  mongo:
+    image: mongo:6
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
