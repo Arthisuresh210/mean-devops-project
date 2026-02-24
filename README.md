@@ -65,6 +65,29 @@ write the docker-compose file and give :
 * it should pull the frontend,backend and database from the Docker Hub
   <img width="1919" height="673" alt="docker up" src="https://github.com/user-attachments/assets/5dd7747b-638d-4afb-97de-d94239d6d12d" />
 
+## Step 3 : CI/CD Pipeline Configuration
+* For CI/CD i have used Github Actions.
+*  add new repo .github/workflows/docker.yml
+  
+  <img width="1871" height="816" alt="github create" src="https://github.com/user-attachments/assets/79e0234c-a827-4124-a6a5-5c89cae0121a" />
+
+* Create repository secrets
+  <img width="1902" height="913" alt="secret" src="https://github.com/user-attachments/assets/3efc7eed-4d08-4e9f-add7-a8ffabfdca15" />
+
+* Click on Actions , the pipeline should build
+  <img width="1919" height="862" alt="build-git" src="https://github.com/user-attachments/assets/02d7633b-9c1b-4f7f-a30f-e48e70a1e168" />
+
+## Step 4: Nginx Reverse Proxy
+* Create nginx.config file
+*  vi nginx.conf
+
+ <img width="1901" height="679" alt="image" src="https://github.com/user-attachments/assets/59d0ee36-1632-465a-b795-e6eaefeaf6a3" />
+
+## Application can be accessed from the EC2-public-ip
+<img width="1919" height="827" alt="op1" src="https://github.com/user-attachments/assets/aff1004b-b6ef-41ed-bfbc-3f38b5be9f6a" />
+<img width="1918" height="743" alt="op2" src="https://github.com/user-attachments/assets/050acafb-26a5-4606-94f0-69376d1728fd" />
+
+
   
 
 
